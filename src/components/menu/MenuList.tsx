@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import Animated, {
   runOnJS,
@@ -33,7 +33,7 @@ import { useInternal } from '../../hooks';
 import { deepEqual } from '../../utils/validations';
 import { leftOrRight } from './calculations';
 
-const AnimatedView = Animated.createAnimatedComponent(BlurView);
+const AnimatedView = Animated.createAnimatedComponent(View);
 
 const MenuListComponent = () => {
   const { state, theme, menuProps } = useInternal();
